@@ -3,7 +3,7 @@
 您可以通过以下命令一键下载并执行安装脚本：
 
 ```bash
-apt-get install wget -y && wget -O setup.sh https://raw.githubusercontent.com/lisi-123/ufw-v2bx-kejilion/main/setup.sh && chmod +x setup.sh && ./setup.sh
+apt-get install wget -y && wget -O setup.sh https://raw.githubusercontent.com/lanran9527/ufw-v2bx-kejilion/main/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
 
 此命令将执行以下操作：
@@ -12,7 +12,7 @@ apt-get install wget -y && wget -O setup.sh https://raw.githubusercontent.com/li
 
   &nbsp;&nbsp;&nbsp;tcp：22，80，443，853，44443，33332
 
-  &nbsp;&nbsp;&nbsp;udp：35000:36000，50000
+  &nbsp;&nbsp;&nbsp;udp：30000:39999，45678
 
 
 2.安装xiao佬的v2bx
@@ -31,7 +31,7 @@ apt-get install wget -y && wget -O setup.sh https://raw.githubusercontent.com/li
 执行以下脚本可一键设置ipv4优先
 
 ```bash
-wget -4 -O setup.sh https://raw.githubusercontent.com/lisi-123/ufw-v2bx-kejilion/main/prefer%20ipv4.sh && chmod +x setup.sh && ./setup.sh
+wget -4 -O setup.sh https://raw.githubusercontent.com/lanran9527/ufw-v2bx-kejilion/main/prefer%20ipv4.sh && chmod +x setup.sh && ./setup.sh
 ```
 
 <br>
@@ -39,7 +39,7 @@ wget -4 -O setup.sh https://raw.githubusercontent.com/lisi-123/ufw-v2bx-kejilion
 ## 一键解锁warp
 
 ```bash
-wget -O setup1.sh https://raw.githubusercontent.com/lisi-123/ufw-v2bx-kejilion/main/setup1.sh && chmod +x setup1.sh && ./setup1.sh
+wget -O setup1.sh https://raw.githubusercontent.com/lanran9527/ufw-v2bx-kejilion/main/setup1.sh && chmod +x setup1.sh && ./setup1.sh
 ```
 
 此命令将执行以下操作：
