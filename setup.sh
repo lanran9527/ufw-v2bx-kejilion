@@ -23,14 +23,14 @@ sudo ufw allow 35000:36000/udp
 sudo ufw allow 50000/udp
 
 # 设置iptables规则
-sudo iptables -t nat -A PREROUTING -p udp --dport 35000:36000 -j REDIRECT --to-port 50000
+sudo iptables -t nat -A PREROUTING -p udp --dport 30000:39999 -j REDIRECT --to-port 45678
 
 # 启用UFW防火墙
 sudo ufw --force enable
 
 # 执行其他安装指令
 wget -N https://raw.githubusercontent.com/lanran3698/V2bX-script/master/install.sh && bash install.sh
-curl -sS -O https://raw.githubusercontent.com/kejilion/sh/main/kejilion.sh && chmod +x kejilion.sh && ./kejilion.sh
+# curl -sS -O https://raw.githubusercontent.com/kejilion/sh/main/kejilion.sh && chmod +x kejilion.sh && ./kejilion.sh
 
 # 修改为上海时区
 sudo timedatectl set-timezone Asia/Shanghai
