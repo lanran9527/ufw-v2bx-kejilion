@@ -29,7 +29,7 @@ sudo iptables -t nat -A PREROUTING -p udp --dport 30000:39999 -j REDIRECT --to-p
 # sudo ufw --force enable
 
 # 执行其他安装指令
-wget -N https://raw.githubusercontent.com/wyx2685/V2bX-script/master/install.sh && bash install.sh
+# wget -N https://raw.githubusercontent.com/wyx2685/V2bX-script/master/install.sh && bash install.sh
 # curl -sS -O https://raw.githubusercontent.com/kejilion/sh/main/kejilion.sh && chmod +x kejilion.sh && ./kejilion.sh
 
 # 设置 root 密码
