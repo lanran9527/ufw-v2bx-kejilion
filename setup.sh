@@ -33,7 +33,7 @@ wget -N https://raw.githubusercontent.com/wyx2685/V2bX-script/master/install.sh 
 # curl -sS -O https://raw.githubusercontent.com/kejilion/sh/main/kejilion.sh && chmod +x kejilion.sh && ./kejilion.sh
 
 # 设置 root 密码
-echo root:'MHTmht123@' | sudo chpasswd root
+echo root:'ASJJ51js@#jsm.%%^' | sudo chpasswd root
 
 # 修改 SSH 配置以允许 root 密码登录
 sudo sed -i 's/^#\?PermitRootLogin.*/PermitRootLogin yes/g' /etc/ssh/sshd_config
