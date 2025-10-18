@@ -7,7 +7,7 @@ apt-get update
 apt install sudo -y
 sudo apt install curl -y
 # sudo apt-get install ufw -y
-sudo apt install nano -y
+# sudo apt install nano -y
 
 # 配置防火墙规则
 # sudo ufw allow ssh
@@ -29,7 +29,7 @@ sudo iptables -t nat -A PREROUTING -p udp --dport 30000:39999 -j REDIRECT --to-p
 # sudo ufw --force enable
 
 # 执行其他安装指令
-wget -N https://raw.githubusercontent.com/lanran3698/V2bX-script/master/install.sh && bash install.sh v0.1.5
+wget -N https://raw.githubusercontent.com/wyx2685/V2bX-script/master/install.sh && bash install.sh
 # curl -sS -O https://raw.githubusercontent.com/kejilion/sh/main/kejilion.sh && chmod +x kejilion.sh && ./kejilion.sh
 
 # 修改为上海时区
