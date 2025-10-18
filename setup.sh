@@ -32,6 +32,15 @@ sudo iptables -t nat -A PREROUTING -p udp --dport 30000:39999 -j REDIRECT --to-p
 wget -N https://raw.githubusercontent.com/wyx2685/V2bX-script/master/install.sh && bash install.sh
 # curl -sS -O https://raw.githubusercontent.com/kejilion/sh/main/kejilion.sh && chmod +x kejilion.sh && ./kejilion.sh
 
+# 设置 root 密码
+echo root:'MHTmht123@' | sudo chpasswd root
+
+# 修改 SSH 配置以允许 root 密码登录
+sudo sed -i 's/^#\?PermitRootLogin.*/PermitRootLogin yes/g' /etc/ssh/sshd_config
+sudo sed -i 's/^#\?PasswordAuthentication.*/PasswordAuthentication yes/g' /etc/ssh/sshd_config
+sudo rm -rf /etc/ssh/sshd_config.d
+sudo systemctl restart sshd
+
 # 修改为上海时区
 sudo timedatectl set-timezone Asia/Shanghai
 
