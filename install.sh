@@ -2,7 +2,7 @@
 
 set -e
 
-REPO="lanran9527/cert-script"   # 换成你的用户名/仓库名
+REPO="lanran9527/ufw-v2bx-kejilion"   # 换成你的用户名/仓库名
 BRANCH="main"                   # 如果不是main分支改成你的分支
 SCRIPT_NAME="cert-manage.sh"
 INSTALL_DIR="/usr/local/bin"
